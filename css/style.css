@@ -238,39 +238,42 @@ a {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-block: min(6.25rem, 20vh);
   background-image: url(../images/gradient-about.png), url(../images/about-sm.png);
   background-position: top left, top left;
-  background-size: cover; /* This will ensure the background covers the full section */
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
   overflow: hidden;
-  min-height: 100%; /* Ensure that the section is at least as tall as the viewport */
-  box-sizing: border-box; /* Ensures padding is included in the height */
+  min-height: 100vh; /* Ensure the section covers at least the viewport height */box-sizing: border-box;
   padding-bottom: 50px;
 }
-
-
 
 .about * {
   text-align: center;
   color: var(--main-white-col);
-  filter: drop-shadow(2px 2px 0 var(--blur-black-col));
+  filter: drop-shadow(2px2px0var(--blur-black-col));
 }
 
-.about h2 {
+.abouth2 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.25rem;
   margin-bottom: min(20vh, 6.5rem);
 }
-.about p {
+
+.aboutp {
   max-width: 10em;
-  font-size: 2rem;
+  font-size: 10rem;
   margin-inline: auto;
-  font-weight: 400;
+  font-weight: 1000;
 }
+
 
 .how_to_buy {
   position: relative;
